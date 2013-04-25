@@ -6,8 +6,14 @@ one:
   image_url: MyString
   price: 9.99
 
-two:
+acme:
   title: MyString
   description: MyText
   image_url: MyString
   price: 9.99
+
+foo:
+  title: Acme Herringbone
+  description: This is the most basic of all the drums.
+  price: 199.99
+  image_url: ruby.png
