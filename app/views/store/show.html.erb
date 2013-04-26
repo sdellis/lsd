@@ -1,0 +1,30 @@
+<p id="notice"><%= flash[:message] %></p>
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+<div class="page-header">
+    <h1><%= @product.title %><small> Back to basics</small></h1>
+</div>
+    <div id="product-pic">
+      <%= image_tag(@product.image_url, :width => '250') %>
+    </div>
+
+    <div id="details">
+          <h4>Only <%= number_to_currency( @product.price ) %></h4>
+          <p>The "Acme" model is hand made in the U.S.A. from resonant plywood, finished with a herringbone texture.  Made with sustainable glues and materials.</p>
+          <p>This kit includes:</p>
+          <ul>
+              <li>hand-built plywood suitcase with a herringbone finish</li>
+              <li>custom made stand for suitcase and kick pedal attachment</li>
+          </ul>
+          <form>
+          <p>Additional options:
+          <select>
+              <option>None</option>
+              <option>Add Cymbal mount — $20.00</option>
+              <option>Add Cymbal arm — $25.00</option>
+          </select>
+          </p>
+          <%= button_to 'Add to Cart', line_items_path(@product.id), method: :post, class: "btn btn-large btn-warning" %>
+          </form>
+    </div>

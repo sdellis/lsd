@@ -1,0 +1,230 @@
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings-white.png");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+// Note: If you use asset_path() here, your compiled bootstrap_and_overrides.css will not
+//       have the proper paths. So for now we use the absolute path.
+@fontAwesomeEotPath: asset-path("fontawesome-webfont.eot?v=3.0.2");
+@fontAwesomeEotPath_iefix: asset-path("fontawesome-webfont.eot?#iefix&v=3.0.2");
+@fontAwesomeWoffPath: asset-path("fontawesome-webfont.woff?v=3.0.2");
+@fontAwesomeTtfPath: asset-path("fontawesome-webfont.ttf?v=3.0.2");
+
+// Font Awesome
+@import "fontawesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+/* body padding offers room to the nav bar */
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/* line 5, ../sass/styles.scss */
+html, body {
+  background-image: url(/assets/brown_tweed.png);
+}
+
+/* line 9, ../sass/styles.scss */
+.callout {
+  text-shadow: 0.1em 0.1em 0.3em #666666;
+  color: #2b1600;
+}
+
+/* line 14, ../sass/styles.scss */
+.carousel-caption {
+  background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.35);
+}
+
+/* line 18, ../sass/styles.scss */
+hr {
+  border-bottom: 1px solid darkkhaki;
+}
+
+/* line 22, ../sass/styles.scss */
+.navbar-inverse .navbar-inner {
+  background-color: #3e2001;
+  background-image: -moz-linear-gradient(top, #3e2001, #2e1700);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3e2001), to(#2e1700));
+  background-image: -webkit-linear-gradient(top, #3e2001, #2e1700);
+  background-image: -o-linear-gradient(top, #3e2001, #2e1700);
+  background-image: linear-gradient(to bottom, #3e2001, #2e1700);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF3e2001', endColorstr='#FF2e1700', GradientType=0);
+  border-color: #1e0f00;
+  border-bottom: 1px dashed #dbd1b3;
+  border-top: 1px dashed #dbd1b3;
+}
+
+/* line 36, ../sass/styles.scss */
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+  color: #fddb73;
+  background-color: #2b1600;
+}
+
+/* line 41, ../sass/styles.scss */
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: #2b1600;
+  color: #fddb73;
+}
+
+/* line 46, ../sass/styles.scss */
+.navbar-inverse .brand {
+  color: #fddb73;
+  /*
+  color: #dbd1b3;
+  font-family: 'Stalemate', cursive;
+  font-size: 2.5em;
+  margin-top: 10px;*/
+}
+
+/* line 55, ../sass/styles.scss */
+.navbar-inverse .nav > li > a {
+  color: #dbd1b3;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 61, ../sass/styles.scss */
+.navbar-inverse .brand:hover,
+.navbar-inverse .nav > li > a:hover {
+  color: #fddb73;
+}
+
+/* line 65, ../sass/styles.scss */
+.navbar-inverse .nav > li > a:hover {
+  background-color: transparent;
+  color: #fddb73;
+}
+
+/* line 70, ../sass/styles.scss 
+#content {
+  opacity: .70;
+  filter: alpha(opacity=70);
+  filter: "alpha(opacity=70)";
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 -20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+*/
+
+#content {
+  background-color: #f7efe3;
+  padding: 20px;
+  margin: 0 -20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* line 87, ../sass/styles.scss */
+.page-header {
+  /* background-color: #f5f5f5; */
+  background-color: #eee5d0;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px;
+  border-bottom: 1px solid #dddddd;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* line 97, ../sass/styles.scss */
+.page-header h1 {
+  margin-bottom: 8px;
+}
+
+/* line 101, ../sass/styles.scss */
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+/* line 107, ../sass/styles.scss */
+h1 small {
+  font-size: 18px;
+}
+
+/* line 111, ../sass/styles.scss */
+#video {
+  float: left;
+  width: 440px;
+  min-height: 315px;
+  margin: 0;
+}
+
+/* line 118, ../sass/styles.scss */
+#about {
+  margin-left: 440px;
+  min-height: 315px;
+}
+
+#product-pic {
+  float: left;
+  width: 250px;
+  min-height: 315px;
+  margin: 0;
+}
+
+#details {
+  margin-left: 270px;
+  min-height: 315px;
+  width: 400px;
+}
+
+.article-unit {
+background-color: #f5f5f5;
+
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+margin-bottom: 10px;
+padding: 10px;
+}
+
+
+#article-image {
+float: left;
+width: 130px;
+min-height: 100px;
+margin: 0;
+}
+
+#article-text {
+
+margin-left: 150px;
+min-height: 100px;
+}
+
+.attribution {
+margin-left: 10px;
+}
