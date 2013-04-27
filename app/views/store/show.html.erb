@@ -17,7 +17,7 @@
               <li>hand-built plywood suitcase with a herringbone finish</li>
               <li>custom made stand for suitcase and kick pedal attachment</li>
           </ul>
-          <form>
+          
           <p>Additional options:
           <select>
               <option>None</option>
@@ -25,6 +25,6 @@
               <option>Add Cymbal arm — $25.00</option>
           </select>
           </p>
-          <%= button_to 'Add to Cart', line_items_path(@product.id), method: :post, class: "btn btn-large btn-warning" %>
-          </form>
+          <%= button_to 'Add to Cart', line_items_path(product_id: @product), method: :post, class: "btn btn-large btn-warning" %>
+         
     </div>
