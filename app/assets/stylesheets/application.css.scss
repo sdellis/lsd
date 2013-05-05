@@ -17,13 +17,14 @@
   }
 
   #side {
+    
     padding: 1em 2em;
-    background: #eee5d0;
-    margin-left: -10;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    border: 1px dashed white;
+      background: #eee5d0;
+      margin-left: -10;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      border: 1px dashed white;
 
     form, div {
       display: inline;
@@ -33,7 +34,8 @@
       font-size: small;
     }
 
-    #cart {
+    #shopcart {
+
       table {
         border-top:    1px dotted #595;
         border-bottom: 1px dotted #595;

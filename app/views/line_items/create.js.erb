@@ -1,1 +1,12 @@
-$('#cart').html("<%= escape_javascript render(@cart) %>");
+//if ($('#shopcart tr').length == 1) { $('#shopcart').show('blind', 2000); }
+
+//console.log ($('#shopcart tr').length);
+
+$('#shopcart').html("<%= escape_javascript render(@cart) %>");
+
+$('#cartModal .modal-body').html("<%= escape_javascript render(@cart) %>");
+
+$('#side').show();
+
+$('#current_item').css({'background-color':'##fbb450'}).
+  animate({'background-color':'##eee5d0'}, 1000);

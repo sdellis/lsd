@@ -1,4 +1,6 @@
-<h3>Your Cart</h3>
+<% unless cart.line_items.empty? %>
+
+<h3><i class="icon-shopping-cart"></i>  Your Cart</h3>
 <table>
   <%= render(cart.line_items) %>
   <tr class="total_line">
@@ -8,3 +10,6 @@
 </table>
 
 <%= button_to 'Empty cart', cart, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% else %>
+<h3><i class="icon-shopping-cart"></i> Your Cart is Empty</h3>
+<% end %>
