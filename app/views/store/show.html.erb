@@ -27,7 +27,7 @@
               <option>Add Cymbal arm — $25.00</option>
           </select>
           </p>
-          <%= button_to 'Add to Cart', line_items_path(product_id: @product), method: :post, class: "btn btn-large btn-warning" %>
+          <%= button_to 'Add to Cart', line_items_path(product_id: @product), remote: true, method: :post, class: "btn btn-large btn-warning" %>
     </div>
   </div>
   <div id="sidecontainer" class="span5">
