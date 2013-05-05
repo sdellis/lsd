@@ -31,15 +31,19 @@
     </div>
   </div>
   <div id="sidecontainer" class="span5">
+    <% if @cart %>
     <div id="side"
-      <% if @cart.line_items.empty? %>
-        style="display: none"
-      <% end %>
+      
+        <% if @cart.line_items.empty? %>
+          style="display: none"
+        <% end %>
+
     >
       <div id="shopcart">
         <%= render @cart %> 
       </div>
     </div>
+    <% end %>
   </div>
 </div>         
 
