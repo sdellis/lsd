@@ -1,10 +1,12 @@
-<p id="notice"><%= flash[:message] %></p>
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
+
 <div class="page-header">
     <h1><%= @product.title %><small> Back to basics</small></h1>
 </div>
+<div class="row">
+  <div class="span7">
     <div id="product-pic">
       <%= image_tag(@product.image_url, :width => '250') %>
     </div>
@@ -26,5 +28,17 @@
           </select>
           </p>
           <%= button_to 'Add to Cart', line_items_path(product_id: @product), method: :post, class: "btn btn-large btn-warning" %>
-         
     </div>
+  </div>
+  <div id="sidecontainer" class="span5">
+    <div id="side">
+      <div id="cart">
+        <%= render @cart %> 
+      </div>
+    </div>
+  </div>
+</div>         
+
+
+
+

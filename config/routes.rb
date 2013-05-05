@@ -6,7 +6,7 @@ Lsd::Application.routes.draw do
 
 
   get "store/index"
-  match 'store' => 'store#index', :as => :index
+  match 'store' => 'store#index', :as => :store
   match 'store/:id' => 'store#show', :as => :show
 
   resources :products
