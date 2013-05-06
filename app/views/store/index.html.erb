@@ -16,7 +16,8 @@
                     <h3><%= product.title %></h3>
                     <p class="price"><strong>Only <%=number_to_currency( product.price ) %>!</strong></p>
                     <p><%= sanitize(product.description) %></p>
-                    <p><a href="detail.php" class="btn btn-primary">See Details</a></p>
+                    <p>
+                      <%= button_to 'See Details', show_path(product.id), method: :get, action: :show, class: "btn btn-large btn-warning" %>
                 </div>
               </div>
             </li>
