@@ -1,4 +1,7 @@
 class OrdersController < ApplicationController
+  include CurrentCart
+  before_filter :set_cart
+  
   # GET /orders
   # GET /orders.json
   def index

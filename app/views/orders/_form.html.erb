@@ -25,9 +25,12 @@
   </div>
   <div class="field">
     <%= f.label :contact_me %><br />
-    <%= f.number_field :contact_me %>
+    <%= f.radio_button :contact_me, 'Yes' %>
+    <%= f.label :Yes %>
+    <%= f.radio_button :contact_me, 'No' %>
+    <%= f.label :No %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Place Order' %>
   </div>
 <% end %>
