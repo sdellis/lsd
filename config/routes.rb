@@ -12,7 +12,9 @@ Lsd::Application.routes.draw do
   match 'store' => 'store#index', :as => :store
   match 'store/:id' => 'store#show', :as => :show
 
-  resources :products
+  resources :products do
+    get :who_bought, on: :member
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

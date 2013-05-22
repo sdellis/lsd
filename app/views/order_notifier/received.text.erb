@@ -1,0 +1,13 @@
+Dear <%= @order.name %>
+
+Than you for your recent order from Lambertville Suitcase Drum.
+
+You ordered the following items:
+
+<%= render @order.line_items %>
+
+We'll send you a separate email when your order ships.
+
+Regards,
+Pat McSherry
+LSD Mngmt

@@ -24,11 +24,8 @@
     <%= f.text_field :email, size: 40 %>
   </div>
   <div class="field">
-    <%= f.label :contact_me %><br />
-    <%= f.radio_button :contact_me, 'Yes' %>
-    <%= f.label :Yes %>
-    <%= f.radio_button :contact_me, 'No' %>
-    <%= f.label :No %>
+    <%= check_box_tag(:contact_me) %>
+    <%= label_tag(:contact_me, "I would like to hear about future offers and new products.") %>
   </div>
   <div class="actions">
     <%= f.submit 'Place Order' %>

@@ -1,9 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  product: 
+  product: Acme Herringbone
+  order: one
   cart: 
 
 two:
-  product: 
-  cart: 
+  product: Acme Herringbone
+  cart: one
