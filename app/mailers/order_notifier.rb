@@ -6,10 +6,10 @@ class OrderNotifier < ActionMailer::Base
   #
   #   en.order_notifier.received.subject
   #
-  def received
-    @greeting = "Hi"
+  def received(order)
+    @order = order
 
-    mail to: "to@example.org"
+    mail to: order.email, subject: "Lambertville Suitcase Drum Order Confirmation"
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -18,8 +18,8 @@ class OrderNotifier < ActionMailer::Base
   #   en.order_notifier.shipped.subject
   #
   def shipped
-    @greeting = "Hi"
+    @order = order
 
-    mail to: "to@example.org"
+    mail to: order.email, subject: "Lambertville Suitcase Drum Order Shipped"
   end
 end
