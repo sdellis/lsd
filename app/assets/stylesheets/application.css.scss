@@ -11,6 +11,123 @@
  *= require_self
  *= require_tree .
  */
+
+/*
+html, body {
+  background-image: url(../images/brown_tweed.png);
+}
+
+.callout {
+    text-shadow: 0.1em 0.1em 0.3em #666;
+    color: #2b1600;
+}
+
+.carousel-caption {
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.35);
+}
+
+hr {
+    border-bottom: 1px solid darkkhaki;
+}
+
+.navbar-inverse .navbar-inner {
+    background-color: #3e2001;
+    background-image: -moz-linear-gradient(top, #3e2001, #2e1700);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3e2001), to(#2e1700));
+    background-image: -webkit-linear-gradient(top, #3e2001, #2e1700);
+    background-image: -o-linear-gradient(top, #3e2001, #2e1700);
+    background-image: linear-gradient(to bottom, #3e2001, #2e1700);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF3e2001', endColorstr='#FF2e1700', GradientType=0);
+    border-color: #1e0f00;
+    border-bottom:1px dashed #dbd1b3;
+    border-top:1px dashed #dbd1b3;
+}
+
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+    color: #fddb73;
+    background-color: #2b1600;
+}
+
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #2b1600;
+    color: #fddb73;
+}
+
+.navbar-inverse .brand {
+    color: #fddb73;
+}
+
+.navbar-inverse .nav > li > a {
+    color: #dbd1b3;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-inverse .brand:hover,
+.navbar-inverse .nav > li > a:hover {
+  color: #fddb73;
+}
+
+.navbar-inverse .nav > li > a:hover {
+  background-color: transparent;
+  color: #fddb73;
+}
+
+#content {
+    opacity: .70;
+    filter: alpha(opacity=70);
+    filter: "alpha(opacity=70)";
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 -20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+.page-header {
+    background-color: #f5f5f5;
+    padding: 20px 20px 10px;
+    margin: -20px -20px 20px;
+    border-bottom: 1px solid #ddd;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.page-header h1 {
+    margin-bottom: 8px;
+}
+
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+h1 small {
+    font-size: 18px;
+}
+
+#video {
+    float: left;
+    width: 440px;
+    min-height: 315px;
+    margin: 0;
+}
+
+#about {
+margin-left: 440px;
+min-height: 315px;
+}
+
+*/
+
   #sidecontainer {
     height: auto;
     min-height:100%;

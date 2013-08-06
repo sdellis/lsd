@@ -1,5 +1,7 @@
 Lsd::Application.routes.draw do
   
+  root :to => 'splash#index'
+
   get 'admin' => 'admin#index'
   controller :sessions do 
     get 'login' => :new
